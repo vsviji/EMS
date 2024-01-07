@@ -23,6 +23,6 @@ This EMS System is Developed Using PHP, MySql, Bootstrap, Javascript, and jQuery
 
 
 
-![stu1]![stu](https://github.com/vsviji/EMS/assets/127862956/10a47462-c17c-4776-b222-61f0ad72ddeb)
+![stu](https://github.com/vsviji/EMS/assets/127862956/10a47462-c17c-4776-b222-61f0ad72ddeb)
 
 
