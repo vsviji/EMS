@@ -10,7 +10,8 @@ This EMS System is Developed Using PHP, MySql, Bootstrap, Javascript, and jQuery
     So they only can access or log in to their account when their account is active.
     If the Faculty and Student Organized or Participated any event then they can register by themselves and the Department and Institute can see their report.
 
-![home1](https://github.com/vsviji/EMS/assets/127862956/a4a43ac5-19ab-4b65-93a7-029a69c47043)
+![home1]![home](https://github.com/vsviji/EMS/assets/127862956/cc307877-2851-4e79-9d66-e318d9ced317)
+
 
 
 ![events]![eve](https://github.com/vsviji/EMS/assets/127862956/4dbe14c7-3972-4a31-af0a-4fef6e281b91)
