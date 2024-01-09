@@ -13,14 +13,15 @@ This EMS System is Developed Using PHP, MySql, Bootstrap, Javascript, and jQuery
 ![ho](https://github.com/vsviji/EMS/assets/127862956/757031fc-fa2a-44a8-af44-0382f3d683a3)
 
 
-!![e](https://github.com/vsviji/EMS/assets/127862956/ed0684bf-1cc6-4fe4-b4c5-cf14154f74b2)
+![e](https://github.com/vsviji/EMS/assets/127862956/ed0684bf-1cc6-4fe4-b4c5-cf14154f74b2)
 
 
 
 ![in](https://github.com/vsviji/EMS/assets/127862956/bfad1570-451e-4e75-9947-eea7470ee32b)
 
 
-![contact](https://github.com/vsviji/EMS/assets/127862956/132ab25b-fa75-41eb-8498-d6c4a6f7c4a5)
+![c](https://github.com/vsviji/EMS/assets/127862956/695f2a3a-6360-424a-a63b-90d1c3cc7645)
+
 
 
 
