@@ -2,19 +2,23 @@
 
 ## About Event Management System(EMS)
 
-This EMS System is Developed Using PHP, MySql, Bootstrap, Javascript, and jQuery.
-    This Project Specially Developed For Institute.
-    In This Project, All Functionality Handled By an Administrator.
-    The Admin Like Institute only Can Create the account for Department, Faculty, and Students.
-    The Administrator Can Activate and Deactivated Their Account.
-    So they only can access or log in to their account when their account is active.
-    If the Faculty and Student Organized or Participated any event then they can register by themselves and the Department and Institute can see their report.
+This Event Management System is developed using PHP, MySql, Bootstrap, Javascript, and jQuery. This project specially developed for an institute. In this Project, 
+The faculty and students can signup and login into their account.
+The faculty can create an event and student can apply to it. After that event completion, the student has to upload the certificate in their account using their login id and password.
+The faculty can see the students event report in their account.
+If the faculty and student organized or participated any event then they can register by themselves and can see their report.
+
 
 ![ho](https://github.com/vsviji/EMS/assets/127862956/757031fc-fa2a-44a8-af44-0382f3d683a3)
 
 
-![e](https://github.com/vsviji/EMS/assets/127862956/ed0684bf-1cc6-4fe4-b4c5-cf14154f74b2)
+![ev](https://github.com/vsviji/EMS/assets/127862956/17ca52af-2a93-4c07-9fd0-48f9f9255004)
 
+
+![addev](https://github.com/vsviji/EMS/assets/127862956/49a9f6e5-09ef-4122-a7a5-262e91e03e00)
+
+
+![si](https://github.com/vsviji/EMS/assets/127862956/396c4310-4369-4e62-b605-113784e85b84)
 
 
 ![s](https://github.com/vsviji/EMS/assets/127862956/8f0c7982-1bb6-45f8-ad22-2ab64cace77f)
@@ -27,5 +31,8 @@ This EMS System is Developed Using PHP, MySql, Bootstrap, Javascript, and jQuery
 
 
 ![stu](https://github.com/vsviji/EMS/assets/127862956/10a47462-c17c-4776-b222-61f0ad72ddeb)
+
+
+![evp](https://github.com/vsviji/EMS/assets/127862956/19f686d1-d915-4027-a9b2-749020f883d2)
 
 
