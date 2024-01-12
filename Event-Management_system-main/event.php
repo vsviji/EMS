@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,8 +12,8 @@
             background-color: #f4f4f4;
             color: #333;
             display: flex;
-    flex-direction: column;
-    align-items: center;
+            flex-direction: column;
+            align-items: center;
         }
         .event {
             margin-bottom: 20px;
@@ -24,8 +22,8 @@
             border-radius: 8px;
             background-color: #fff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 45%; 
-            float: left; 
+            width: 45%;
+            float: left;
             margin-right: 20px;
         }
         h2 {
@@ -79,119 +77,100 @@
             background-color: #0056b3;
         }
         input[type="search"] {
-    width: 900px; /* Adjust the width as needed */
-    padding: 8px;
-    margin-bottom: 10px auto !important;
-    box-sizing: border-box;
-    
-}
-
+            width: 900px; /* Adjust the width as needed */
+            padding: 8px;
+            margin-bottom: 10px auto !important;
+            box-sizing: border-box;
+        }
     </style>
 </head>
 <body>
-<button class="add-event-btn" onclick="toggleAddEventForm()" ><a href="addevent.php">Add Event</a></button>
+<button class="add-event-btn" onclick="toggleAddEventForm()"><a href="addevent.php">Add Event</a></button>
 <h1 style="text-align: center">Events</h1>
-    <!-- Search Bar -->
-    <input type="search" id="eventSearch" placeholder="Search events" oninput="filterEvents()" >
+<!-- Search Bar -->
+<input type="search" id="eventSearch" placeholder="Search events" oninput="filterEvents()">
 
-    <div class="event">
-        <h2>JAVA</h2>
-        <p><strong>Description:</strong> JAVA Basic</p>
-        <p><strong>Category:</strong> Paper Presentations</p>
-        <p><strong>Location:</strong>Salem</p>
-        <button class="apply-btn" onclick="toggleApplyForm('apply-form-1')">Apply</button>
-        <div class="apply-form" id="apply-form-1">
-            <form method="post" action="apply.php">
-                <label for="name">Name:</label>
-                <input type="text" name="name" required><br>
+<?php
+// Database connection details
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "event_mgmt";
 
-                <label for="phone">Phone No:</label>
-                <input type="tel" name="phone" required><br>
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-                <label for="department">Department:</label>
-                <input type="text" name="department" required><br>
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 
-                <label for="year">Year:</label>
-                <input type="text" name="year" required><br>
+// Fetch events from the database
+$sql = "SELECT * FROM events";
+$result = $conn->query($sql);
 
-                <input type="submit" value="Submit">
-            </form>
+// Display events
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        ?>
+        <div class="event">
+            <h2><?php echo $row["eventName"]; ?></h2>
+            <p><strong>Description:</strong> <?php echo $row["eventDescription"]; ?></p>
+            
+            <p><strong>Location:</strong> <?php echo $row["eventLocation"]; ?></p>
+
+            <p><strong>Event Organizer Name:</strong> <?php echo $row["eventOrganizer"]; ?></p>
+
+            <p><strong>Added By:</strong> <?php echo $row["organizer"]; ?></p>
+            <button class="apply-btn" onclick="toggleApplyForm('apply-form-<?php echo $row["eventId"]; ?>')">Apply</button>
+            <div class="apply-form" id="apply-form-<?php echo $row["eventId"]; ?>">
+                <form method="post" action="apply.php">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" required><br>
+
+                    <label for="phone">Phone No:</label>
+                    <input type="tel" name="phone" required><br>
+
+                    <label for="department">Department:</label>
+                    <input type="text" name="department" required><br>
+
+                    <label for="year">Year:</label>
+                    <input type="text" name="year" required><br>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
         </div>
-    </div>
+        <?php
+    }
+} else {
+    echo "No events found.";
+}
 
-    <div class="event">
-        <h2>PYTHON</h2>
-        <p><strong>Description:</strong> Python Basic</p>
-        <p><strong>Category:</strong> Courses</p>
-        <p><strong>Location:</strong> Kerala</p>
-        <button class="apply-btn" onclick="toggleApplyForm('apply-form-2')">Apply</button>
-        <div class="apply-form" id="apply-form-2">
-            <form method="post" action="apply.php">
-                <label for="name">Name:</label>
-                <input type="text" name="name" required><br>
+// Close the database connection
+$conn->close();
+?>
 
-                <label for="phone">Phone No:</label>
-                <input type="tel" name="phone" required><br>
+<script>
+    function toggleApplyForm(formId) {
+        var form = document.getElementById(formId);
+        form.style.display = form.style.display === 'none' ? 'block' : 'none';
+    }
 
-                <label for="department">Department:</label>
-                <input type="text" name="department" required><br>
+    function filterEvents() {
+        var searchInput = document.getElementById('eventSearch').value.toLowerCase();
+        var events = document.querySelectorAll('.event');
 
-                <label for="year">Year:</label>
-                <input type="text" name="year" required><br>
-
-                <input type="submit" value="Submit">
-            </form>
-        </div>
-    </div>
-
-    <div class="event">
-        <h2>C++</h2>
-        <p><strong>Description:</strong> C++ Basic</p>
-        <p><strong>Category:</strong> STTP</p>
-        <p><strong>Location:</strong> Chennai</p>
-        <button class="apply-btn" onclick="toggleApplyForm('apply-form-3')">Apply</button>
-        <div class="apply-form" id="apply-form-3">
-            <form method="post" action="apply.php">
-                <label for="name">Name:</label>
-                <input type="text" name="name" required><br>
-
-                <label for="phone">Phone No:</label>
-                <input type="tel" name="phone" required><br>
-
-                <label for="department">Department:</label>
-                <input type="text" name="department" required><br>
-
-                <label for="year">Year:</label>
-                <input type="text" name="year" required><br>
-
-                <input type="submit" value="Submit">
-            </form>
-        </div>
-    </div>
-   
-
-    
-    <script>
-        function toggleApplyForm(formId) {
-            var form = document.getElementById(formId);
-            form.style.display = form.style.display === 'none' ? 'block' : 'none';
-        }
-
-        function filterEvents() {
-            var searchInput = document.getElementById('eventSearch').value.toLowerCase();
-            var events = document.querySelectorAll('.event');
-
-            events.forEach(function(event) {
-                var eventName = event.querySelector('h2').innerText.toLowerCase();
-                if (eventName.includes(searchInput)) {
-                    event.style.display = 'block';
-                } else {
-                    event.style.display = 'none';
-                }
-            });
-        }
-    </script>
-    
+        events.forEach(function (event) {
+            var eventName = event.querySelector('h2').innerText.toLowerCase();
+            if (eventName.includes(searchInput)) {
+                event.style.display = 'block';
+            } else {
+                event.style.display = 'none';
+            }
+        });
+    }
+</script>
 
 </body>
 </html>
