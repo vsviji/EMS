@@ -15,20 +15,15 @@ If the faculty and student organized or participated any event then they can reg
 ![ev](https://github.com/vsviji/EMS/assets/127862956/17ca52af-2a93-4c07-9fd0-48f9f9255004)
 
 
-![addev](https://github.com/vsviji/EMS/assets/127862956/49a9f6e5-09ef-4122-a7a5-262e91e03e00)
+![ae](https://github.com/vsviji/EMS/assets/127862956/9f7d9ab4-46a0-40e2-8c6d-d35dca82b945)
+
 
 
 ![si](https://github.com/vsviji/EMS/assets/127862956/396c4310-4369-4e62-b605-113784e85b84)
 
 
 
+![c](https://github.com/vsviji/EMS/assets/127862956/b42fc91c-5280-4c9f-b90a-94a30e2941af)
 
-
-
-
-![stu](https://github.com/vsviji/EMS/assets/127862956/10a47462-c17c-4776-b222-61f0ad72ddeb)
-
-
-![evp](https://github.com/vsviji/EMS/assets/127862956/19f686d1-d915-4027-a9b2-749020f883d2)
-
+![evp](https://github.com/vsviji/EMS/assets/127862956/3b9270e6-b0c8-4eff-bfb8-e9d9d89cd4b8)
 
