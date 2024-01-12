@@ -21,11 +21,7 @@ If the faculty and student organized or participated any event then they can reg
 ![si](https://github.com/vsviji/EMS/assets/127862956/396c4310-4369-4e62-b605-113784e85b84)
 
 
-![s](https://github.com/vsviji/EMS/assets/127862956/8f0c7982-1bb6-45f8-ad22-2ab64cace77f)
 
-
-
-![c](https://github.com/vsviji/EMS/assets/127862956/695f2a3a-6360-424a-a63b-90d1c3cc7645)
 
 
 
