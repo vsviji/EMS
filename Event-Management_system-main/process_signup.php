@@ -40,6 +40,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Execute the SQL query
     if ($conn->query($sql) === TRUE) {
+        header("Location: event.php?eventName=$eventName&eventDescription=$eventDescription&eventLocation=$eventLocation&eventOrganizer=$eventOrganizer&organizer=$organizer");
+        exit;
         ?>
         <!DOCTYPE html>
         <html>
