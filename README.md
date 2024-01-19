@@ -8,6 +8,6 @@ The faculty can create an event and student can apply to it. After that event co
 The faculty can see the students event report in their account.
 If the faculty and student organized or participated any event then they can register by themselves and can see their report.
 
-
+PPT,Report,Video - https://drive.google.com/drive/folders/1IHDJBwg9zcXGEPjjhTymXLupGCacBxpu?usp=drive_link
 
 
